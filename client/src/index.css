@@ -14,3 +14,14 @@ body {
   stroke: #f8c102;
   
 }
+
+.entry label, .entry input, .entry textarea{
+  margin-right: 0.5rem;
+  display: block;
+  width: 100%;
+}
+
+.pop {
+  max-width: 200px;
+  padding: 1rem;
+}
