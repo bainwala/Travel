@@ -3,10 +3,16 @@ const LogEntry = require("../models/logEntry");
 
 const router = Router();
 
+const test = [{
+  title: 'Empire State Building',
+  latitude: 40.7484,
+  longitude: -73.985
+}]
+
 router.get("/", async (req, res) => {
   try {
     const entries = await LogEntry.find();
-    res.json(entries);
+    res.json(test);
   } catch (error) {
     next(error);
   }
